@@ -1,0 +1,31 @@
+---
+title: "ggplot_hhok"
+author: "jay"
+date: "2025-05-06"
+output: pdf_document
+---
+##setting up my envioronment
+Notes: settting up my R environment by loading the tidyverse and palmer penguins packages
+```{r loading packages} 
+
+library(tidyverse)
+library(palmerpenguins)
+```
+```{r ggplot for penguin data}
+
+library(ggplot2)
+
+library(palmerpenguins)
+
+data(penguins)
+
+View(penguins)
+
+```
+```{r ggplot for penguin data visualization}
+
+ggplot(data = penguins) +
+
+  geom_point(mapping = aes(x = flipper_length_mm, y = body_mass_g))
+
+```
